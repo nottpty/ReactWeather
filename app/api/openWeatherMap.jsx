@@ -14,7 +14,8 @@ module.exports = {
                 return res.data.main.temp;
             }
         }, function(res){
-            throw new Error('Not found city');
+            throw new Error('Error: Not found city');
+            // throw new Error('Unable to fetch weather for that location.');
         });
     }
 }
